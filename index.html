@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasrat Protfolio</title>
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 60px;
+        background-color: rgb(5, 5, 87);
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin: 0 25px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    nav ul li a:hover {
+        color: lavender;
+    }
+
+    .left {
+        font-size: 1.5rem;
+        font: bold;
+    }
+
+    .firstSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 65px 0;
+    }
+
+    .firstSection div {
+        width: 30%;
+    }
+
+    .leftSection {
+        font-size: 3rem;
+        margin: 70px 0;
+    }
+
+    .rightSection img {
+        width: 80%;
+        margin: 50px 0;
+        border-radius: 100%;
+    }
+
+
+    .purple {
+        color: rgb(216, 51, 216);
+    }
+
+    .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+    }
+
+    .secondSection h1 {
+        font-size: 1.9rem;
+    }
+
+    main hr {
+        border: 0;
+        background: red;
+        margin: 40px 85px;
+        height: 1.2px;
+    }
+
+    .text-gray {
+        color: gray;
+    }
+
+    .secondSection .box {
+        background-color: white;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+    }
+
+    .secondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 130px;
+    }
+
+    .image-top {
+        width: 23px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+    }
+
+    .vertical-text {
+        position: relative;
+        top: 75px;
+        width: 180px;
+    }
+
+    .vertical-desc {
+        position: relative;
+        top: 86px;
+        width: 180px;
+        color: gray;
+        font-size: 11px;
+    }
+
+    footer {
+        background-color: rgb(7, 46, 83);
+        height: 50px;
+        padding: 10px;
+    }
+
+    .footer {
+        display: flex;
+    }
+
+    .footer-div {
+        padding: 0 15px;
+    }
+
+</style>
+
+<body>
+    <header id="home">
+        <nav>
+            <div class="left">Hasrat's Protfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    </li>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hello, I am <span class="purple">Hasrat</span> & I am passionate about
+                <span class="purple" id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="hasrat.jpeg" alt="The boy studing on study table">
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="about" class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>About Me</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="image.png" alt="past work">
+                    <div class="vertical-text">B.Tech Aliah University <br>(2016-2020)</div>
+                    <div class="vertical-desc"></div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="image.png" alt="past work">
+                    <div class="vertical-text">M.Tech IIT PATNA <br> (2021-2023)</div>
+                    <div class="vertical-desc"></div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="image.png" alt="past work">
+                    <div class="vertical-text">Intel corporation<br>(2022-2022)</div>
+                    <div class="vertical-desc"></div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="image.png" alt="past work">
+                    <div class="vertical-text">HCL Tech (2023-2024)</div>
+                    <div class="vertical-desc"></div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        <section id="projects" class="secondSection">
+            <span class="text-gray">My Projects</span>
+            <h1>Projects</h1>
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <h2>Contact Me</h2>
+        <div class="footer">
+            <div class="">E-Mail</div>
+            <div class="footer-div">LinkedIn</div>
+            <div class="footer-div">Resume</div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Python', 'Machine Learning', 'Web Development', 'Python'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
